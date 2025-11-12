@@ -51,7 +51,9 @@
     <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
     <Compile Include="Assets\Scripts\DanglingLight.cs" />
     <Compile Include="Assets\Scripts\Gameplay\BarcodeAttack.cs" />
+    <Compile Include="Assets\Scripts\Sound\Sound.cs" />
     <Compile Include="Assets\Scripts\FlickeringText.cs" />
+    <Compile Include="Assets\Scripts\Sound\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Enemy.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
