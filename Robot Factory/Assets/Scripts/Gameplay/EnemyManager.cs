@@ -1,7 +1,10 @@
 using UnityEngine;
 using UnityEngine.AI;
+<<<<<<< HEAD
 using System.Collections;
 using System.Collections.Generic;
+=======
+>>>>>>> Angelo_Implementations
 
 public class EnemyManager : MonoBehaviour
 {
@@ -17,6 +20,7 @@ public class EnemyManager : MonoBehaviour
     public int minSpawn;
     public int maxSpawn;
     private int spawnNum = 0;
+<<<<<<< HEAD
    public Queue<GameObject> redEnemies = new Queue<GameObject>();
     public Queue<GameObject> blueEnemies = new Queue<GameObject>();
     public Queue<GameObject> greenEnemies = new Queue<GameObject>();
@@ -27,6 +31,9 @@ public class EnemyManager : MonoBehaviour
     {
         Instance = this;
     }
+=======
+
+>>>>>>> Angelo_Implementations
 
     private void Start()
     {
@@ -40,10 +47,14 @@ public class EnemyManager : MonoBehaviour
         {
             SpawnEnemies();
             timer = spawnTimer;
+<<<<<<< HEAD
             if (spawnTimer >= 0.5f)
             {
                 spawnTimer -= spawnSpeedInterval;
             }
+=======
+            spawnTimer -= spawnSpeedInterval;
+>>>>>>> Angelo_Implementations
         }
       
 
@@ -66,32 +77,45 @@ public class EnemyManager : MonoBehaviour
                 GameObject spawnedEnemy = Instantiate(redEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+<<<<<<< HEAD
                 redEnemies.Enqueue(spawnedEnemy);
+=======
+>>>>>>> Angelo_Implementations
             }
             else if (enemyType == 1)
             {
                GameObject spawnedEnemy = Instantiate(blueEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+<<<<<<< HEAD
                 blueEnemies.Enqueue(spawnedEnemy);
+=======
+>>>>>>> Angelo_Implementations
             }
             else if (enemyType == 2)
             {
                 GameObject spawnedEnemy = Instantiate(greenEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+<<<<<<< HEAD
                 greenEnemies.Enqueue(spawnedEnemy);
+=======
+>>>>>>> Angelo_Implementations
             }
             else if (enemyType == 3) {
                 GameObject spawnedEnemy = Instantiate(yellowEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+<<<<<<< HEAD
                 yellowEnemies.Enqueue(spawnedEnemy);
+=======
+>>>>>>> Angelo_Implementations
             }
 
         }
     }
 
+<<<<<<< HEAD
     public void DestroyOldestRed()
     {
         if (redEnemies.Count > 0)
@@ -144,4 +168,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+=======
+  
+>>>>>>> Angelo_Implementations
 }

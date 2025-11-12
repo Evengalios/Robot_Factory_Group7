@@ -216,6 +216,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1 &435909448
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +330,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435909448}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+=======
+>>>>>>> Angelo_Implementations
 --- !u!1 &806273208
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,8 +344,11 @@ GameObject:
   - component: {fileID: 806273211}
   - component: {fileID: 806273210}
   - component: {fileID: 806273209}
+<<<<<<< HEAD
   - component: {fileID: 806273213}
   - component: {fileID: 806273214}
+=======
+>>>>>>> Angelo_Implementations
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -436,12 +442,18 @@ Transform:
   m_GameObject: {fileID: 806273208}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -1.6313, y: -5.3, z: 46.3181}
   m_LocalScale: {x: 20.597523, y: 1, z: 32.126842}
+=======
+  m_LocalPosition: {x: -9.9058, y: -4.56467, z: 61.88118}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> Angelo_Implementations
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!54 &806273213
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -532,6 +544,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarcodeAttack
   enemyManager: {fileID: 2013037629}
+=======
+>>>>>>> Angelo_Implementations
 --- !u!1 &1226108364
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,12 +632,17 @@ Transform:
   m_GameObject: {fileID: 1226108364}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 1, z: 14.1}
+=======
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+>>>>>>> Angelo_Implementations
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1506225345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,6 +1339,8 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1092085422}
   m_SourcePrefab: {fileID: 100100000, guid: 41f0217072b5b28448a1dd6d6e26f7bd, type: 3}
+=======
+>>>>>>> Angelo_Implementations
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1327,5 +1348,8 @@ SceneRoots:
   - {fileID: 1226108367}
   - {fileID: 79930305}
   - {fileID: 806273212}
+<<<<<<< HEAD
   - {fileID: 2013037631}
   - {fileID: 5077383937814949307}
+=======
+>>>>>>> Angelo_Implementations
