@@ -1,15 +1,19 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
+
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] menuOptions;
     [SerializeField] private Color selectedColor = Color.white;
     [SerializeField] private Color deselectedColor = Color.gray;
+    [SerializeField] private GameObject transitionObject; 
 
     private int currentSelection = 0;
     private string[] originalTexts;
     private Camera uiCamera;
+    private bool isTransitioning = false; 
 
     void Start()
     {
@@ -19,18 +23,19 @@ public class MainMenu : MonoBehaviour
         {
             originalTexts[i] = menuOptions[i].text.TrimStart('>', ' ').Trim();
         }
-
         //Gets the UI camera from the canvas
         Canvas canvas = menuOptions[0].canvas;
         uiCamera = canvas.worldCamera;
-     
 
         UpdateMenuDisplay();
     }
 
     void Update()
     {
-        HandleInput();
+        if (!isTransitioning) 
+        {
+            HandleInput();
+        }
     }
 
     void HandleInput()
@@ -43,7 +48,6 @@ public class MainMenu : MonoBehaviour
                 currentSelection = menuOptions.Length - 1;
             UpdateMenuDisplay();
         }
-
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             currentSelection++;
@@ -51,10 +55,8 @@ public class MainMenu : MonoBehaviour
                 currentSelection = 0;
             UpdateMenuDisplay();
         }
-
         //Mouse nav
         HandleMouseSelection();
-
         //Selection
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
         {
@@ -67,7 +69,6 @@ public class MainMenu : MonoBehaviour
         for (int i = 0; i < menuOptions.Length; i++)
         {
             RectTransform rectTransform = menuOptions[i].GetComponent<RectTransform>();
-
             if (RectTransformUtility.RectangleContainsScreenPoint(rectTransform, Input.mousePosition, uiCamera))
             {
                 if (currentSelection != i)
@@ -75,7 +76,7 @@ public class MainMenu : MonoBehaviour
                     currentSelection = i;
                     UpdateMenuDisplay();
                 }
-                break; 
+                break;
             }
         }
     }
@@ -103,7 +104,7 @@ public class MainMenu : MonoBehaviour
         {
             case 0:
                 Debug.Log("New Game selected");
-                SceneManager.LoadScene("IntroSequence");
+                StartCoroutine(TransitionToScene("IntroSequence"));
                 break;
             case 1:
                 Debug.Log("Settings selected");
@@ -118,5 +119,21 @@ public class MainMenu : MonoBehaviour
 #endif
                 break;
         }
+    }
+
+    IEnumerator TransitionToScene(string sceneName)
+    {
+        isTransitioning = true;
+
+        if (transitionObject != null)
+        {
+            transitionObject.SetActive(true);
+        }
+
+        // Wait for 1.5 seconds
+        yield return new WaitForSeconds(1.5f);
+
+        // Load the scene
+        SceneManager.LoadScene(sceneName);
     }
 }
