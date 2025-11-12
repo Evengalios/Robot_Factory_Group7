@@ -1167,6 +1167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8be437b10d3b31944a4876492e8f5d8d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 692e5ef5d9b674543a5054b1315d4006, type: 2}
     - target: {fileID: 919132149155446097, guid: 8be437b10d3b31944a4876492e8f5d8d, type: 3}
       propertyPath: m_Name
       value: Manhole_2x2_Factory
@@ -1819,7 +1823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d06509b6b9a28234da2fcacd812a6f65, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00029313564
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d06509b6b9a28234da2fcacd812a6f65, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2159,6 +2163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8be437b10d3b31944a4876492e8f5d8d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 692e5ef5d9b674543a5054b1315d4006, type: 2}
     - target: {fileID: 919132149155446097, guid: 8be437b10d3b31944a4876492e8f5d8d, type: 3}
       propertyPath: m_Name
       value: Manhole_2x2_Factory (1)

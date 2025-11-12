@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] menuOptions;
@@ -23,11 +23,7 @@ public class MainMenu : MonoBehaviour
         //Gets the UI camera from the canvas
         Canvas canvas = menuOptions[0].canvas;
         uiCamera = canvas.worldCamera;
-
-        if (uiCamera == null)
-        {
-            Debug.LogWarning("Canvas worldCamera is null! Make sure to assign the UI Camera to the Canvas.");
-        }
+     
 
         UpdateMenuDisplay();
     }
@@ -107,7 +103,7 @@ public class MainMenu : MonoBehaviour
         {
             case 0:
                 Debug.Log("New Game selected");
-                // LoadScene("GameScene");
+                SceneManager.LoadScene("IntroSequence");
                 break;
             case 1:
                 Debug.Log("Settings selected");
