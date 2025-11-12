@@ -1,18 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\My Games\\Robot Factory\\Robot Factory\\",
+  "WorkspaceRootPath": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|c:\\my games\\robot factory\\robot factory\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|c:\\users\\ptjac\\onedrive\\documents\\github\\robot_factory_group7\\robot factory\\assets\\scripts\\gameplay\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|C:\\My Games\\Robot Factory\\Robot Factory\\assets\\scripts\\danglinglight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\danglinglight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\enemyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|C:\\My Games\\Robot Factory\\Robot Factory\\assets\\scripts\\flickeringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\flickeringtext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|c:\\users\\ptjac\\onedrive\\documents\\github\\robot_factory_group7\\robot factory\\assets\\scripts\\gameplay\\barcodeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\barcodeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +21,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DanglingLight.cs",
-              "DocumentMoniker": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\DanglingLight.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DanglingLight.cs",
-              "ToolTip": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\DanglingLight.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DanglingLight.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "enemyManager.cs",
+              "DocumentMoniker": "D:\\enemyManager.cs",
+              "ToolTip": "D:\\enemyManager.cs",
+              "ViewState": "AgIAAGkBAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-11T01:13:09.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlickeringText.cs",
-              "DocumentMoniker": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\FlickeringText.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FlickeringText.cs",
-              "ToolTip": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\FlickeringText.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FlickeringText.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:45:46.285Z"
+              "WhenOpened": "2025-11-12T00:38:13.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\My Games\\Robot Factory\\Robot Factory\\Assets\\Scripts\\MainMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowA8AAAAQAAAAAAAAAA==",
+              "Title": "EnemyManager.cs",
+              "DocumentMoniker": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\EnemyManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\EnemyManager.cs",
+              "ToolTip": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\EnemyManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\EnemyManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T21:41:15.78Z",
+              "WhenOpened": "2025-11-12T00:38:06.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BarcodeAttack.cs",
+              "DocumentMoniker": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
+              "ToolTip": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T00:35:00.291Z",
               "EditorCaption": ""
             }
           ]
