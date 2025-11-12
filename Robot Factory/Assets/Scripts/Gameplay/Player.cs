@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
             collision.gameObject.tag == "greenEnemy" || collision.gameObject.tag == "yellowEnemy")
         {
             health -= 1;
+            AudioManager.instance.PlaySfx("CharacterHurt");
 
             // Update health UI
             if (healthUI != null)

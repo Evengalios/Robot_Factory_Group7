@@ -66,7 +66,7 @@ public class TypewriterEffect : MonoBehaviour
         {
             exitAnimation.SetActive(true);
         }
-
+        AudioManager.instance.PlaySfx("UIClick");
         yield return new WaitForSeconds(exitDelay);
 
         LoadNextScene();
@@ -83,6 +83,7 @@ public class TypewriterEffect : MonoBehaviour
         {
             displayText += character;
             loreText.text = displayText + cursorSymbol;
+            AudioManager.instance.PlaySfx("UISelect");
 
             if (pauseCharacters.Contains(character.ToString()))
             {
@@ -154,6 +155,7 @@ public class TypewriterEffect : MonoBehaviour
         if (!string.IsNullOrEmpty(nextSceneName))
         {
             SceneManager.LoadScene(nextSceneName);
+            AudioManager.instance.PlayMusic("Music");
         }
         else
         {

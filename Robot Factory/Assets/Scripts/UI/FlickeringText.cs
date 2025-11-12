@@ -86,7 +86,7 @@ public class FlickeringText : MonoBehaviour
                 int vertexIndex = textInfo.characterInfo[i].vertexIndex;
                 Color32[] colors = textInfo.meshInfo[materialIndex].colors32;
 
-                if (Random.value > 0.6f)
+                if (Random.value > 0.6f && vertexIndex + 3 < originalColors.Length)
                 {
                     Color32 flickerColor = originalColors[vertexIndex];
                     flickerColor.a = (byte)(flickerIntensity * 255);
@@ -96,7 +96,7 @@ public class FlickeringText : MonoBehaviour
                     colors[vertexIndex + 2] = flickerColor;
                     colors[vertexIndex + 3] = flickerColor;
                 }
-                else
+                else if (vertexIndex + 3 < originalColors.Length)
                 {
                     colors[vertexIndex] = originalColors[vertexIndex];
                     colors[vertexIndex + 1] = originalColors[vertexIndex + 1];

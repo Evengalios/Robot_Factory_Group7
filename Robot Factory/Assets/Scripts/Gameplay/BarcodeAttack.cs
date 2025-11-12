@@ -32,6 +32,7 @@ public class BarcodeAttack : MonoBehaviour
             {
                 if (EnemyManager.Instance != null)
                 {
+                    AudioManager.instance.PlaySfx("RobotDeath1");
                     EnemyManager.Instance.DestroyOldestRed();
                 }
             }
@@ -39,6 +40,7 @@ public class BarcodeAttack : MonoBehaviour
             {
                 if (EnemyManager.Instance != null)
                 {
+                    AudioManager.instance.PlaySfx("RobotDeath5");
                     EnemyManager.Instance.DestroyOldestBlue();
                 }
             }
@@ -46,6 +48,7 @@ public class BarcodeAttack : MonoBehaviour
             {
                 if (EnemyManager.Instance != null)
                 {
+                    AudioManager.instance.PlaySfx("RobotDeath3");
                     EnemyManager.Instance.DestroyOldestGreen();
                 }
             }
@@ -53,6 +56,7 @@ public class BarcodeAttack : MonoBehaviour
             {
                 if (EnemyManager.Instance != null)
                 {
+                    AudioManager.instance.PlaySfx("RobotDeath4");
                     EnemyManager.Instance.DestroyOldestYellow();
                 }
             }
