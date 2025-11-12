@@ -4,7 +4,7 @@ public class BarcodeAttack : MonoBehaviour
 {
     private string currentBarcode = "";
     private Renderer objectRenderer;
-    private GameObject[] atkEnemies;
+    public GameObject enemyManager;
 
 
 
@@ -30,42 +30,40 @@ public class BarcodeAttack : MonoBehaviour
         {
             if (currentBarcode.Contains("red"))
             {
-                atkEnemies = GameObject.FindGameObjectsWithTag("redEnemy");
-                foreach (GameObject obj in atkEnemies)
+                if (EnemyManager.Instance != null)
                 {
-                    Destroy(obj);
+                    EnemyManager.Instance.DestroyOldestRed();
                 }
             }
             else if (currentBarcode.Contains("blue"))
             {
-                atkEnemies = GameObject.FindGameObjectsWithTag("blueEnemy");
-                foreach (GameObject obj in atkEnemies)
+                if (EnemyManager.Instance != null)
                 {
-                    Destroy(obj);
+                    EnemyManager.Instance.DestroyOldestBlue();
                 }
             }
             else if (currentBarcode.Contains("green"))
             {
-                atkEnemies = GameObject.FindGameObjectsWithTag("greenEnemy");
-                foreach (GameObject obj in atkEnemies)
+                if (EnemyManager.Instance != null)
                 {
-                    Destroy(obj);
+                    EnemyManager.Instance.DestroyOldestGreen();
                 }
             }
             else if (currentBarcode.Contains("yellow"))
             {
-                atkEnemies = GameObject.FindGameObjectsWithTag("yellowEnemy");
-                foreach (GameObject obj in atkEnemies)
+                if (EnemyManager.Instance != null)
                 {
-                    Destroy(obj);
+                    EnemyManager.Instance.DestroyOldestYellow();
                 }
             }
             else
             {
-                Debug.Log("Not Valid");
+                Debug.Log("no enemies of type");
             }
+            
 
-            Debug.Log("Scanned Barcode " + currentBarcode);
+
+                Debug.Log("Scanned Barcode " + currentBarcode);
             currentBarcode = "";
 
 
