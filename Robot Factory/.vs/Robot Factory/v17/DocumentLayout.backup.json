@@ -7,10 +7,14 @@
       "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\enemymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|c:\\users\\ptjac\\onedrive\\documents\\github\\robot_factory_group7\\robot factory\\assets\\scripts\\gameplay\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\enemyManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|c:\\users\\ptjac\\onedrive\\documents\\github\\robot_factory_group7\\robot factory\\assets\\scripts\\gameplay\\barcodeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\assets\\scripts\\gameplay\\barcodeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE062EC5-7A20-6F3F-14F2-031B59365456}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\barcodeattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -21,11 +25,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Enemy.cs",
+              "ToolTip": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:33:47.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "enemyManager.cs",
               "DocumentMoniker": "D:\\enemyManager.cs",
               "ToolTip": "D:\\enemyManager.cs",
@@ -49,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BarcodeAttack.cs",
               "DocumentMoniker": "C:\\Users\\ptjac\\OneDrive\\Documents\\GitHub\\Robot_Factory_Group7\\Robot Factory\\Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
@@ -57,8 +74,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Gameplay\\BarcodeAttack.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T00:35:00.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T00:35:00.291Z"
             }
           ]
         }
