@@ -130,8 +130,7 @@ public class MainMenu : MonoBehaviour
             transitionObject.SetActive(true);
         }
 
-        // Wait for 1.5 seconds
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
 
         // Load the scene
         SceneManager.LoadScene(sceneName);

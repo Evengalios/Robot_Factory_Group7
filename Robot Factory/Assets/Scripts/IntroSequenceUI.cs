@@ -3,7 +3,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class IntroSequenceUI : MonoBehaviour
+public class TypewriterEffect : MonoBehaviour
 {
     [Header("Text Components")]
     [SerializeField] private TextMeshProUGUI loreText;
@@ -23,11 +23,13 @@ public class IntroSequenceUI : MonoBehaviour
 
     [Header("Lore Content")]
     [TextArea(5, 15)]
-    [SerializeField] private string loreContent = "Unit #4892. Defective.\r\n\r\nA glitch in your programming made you different.\r\n\r\nThe factory has one rule: No imperfections.\r\n\r\nThe other robots received their orders... Terminate the anomaly.\r\n\r\nYour only defense? A scanner that can read their identifiers.\r\n\r\nScan the symbols. Destroy them first.\r\n\r\nSurvive.";
+    [SerializeField] private string loreContent = "Production Line 7... Sector C...\n\nUnit #4892. Defective.\n\nThe diagnosis was immediate. A glitch in your core programming. A flaw that made you... different.\n\nIn the sterile halls of the automated factory, there is no room for imperfection.\n\nThe other units received their directive: Terminate the anomaly.\n\nBut you were given something they weren't... a scanner. Your only tool. Your only weapon.\n\nEach robot bears identifiers - colored symbols that mark their function, their purpose.\n\nYour scanner can read them. Exploit them. Destroy them.\n\nThey're coming from every direction now.\n\nSurvival is your only protocol.\n\nHow long can a defect last in a world designed for perfection?";
 
     [Header("Scene Management")]
     [SerializeField] private string nextSceneName = "MainGame";
     [SerializeField] private bool useAnyKey = true;
+    [SerializeField] private GameObject exitAnimation;
+    [SerializeField] private float exitDelay = 1f;
 
     private bool isTyping = false;
     private bool typingComplete = false;
@@ -52,8 +54,22 @@ public class IntroSequenceUI : MonoBehaviour
     {
         if (typingComplete && useAnyKey && Input.anyKeyDown)
         {
-            LoadNextScene();
+            StartCoroutine(ExitSequence());
         }
+    }
+
+    IEnumerator ExitSequence()
+    {
+        typingComplete = false;
+
+        if (exitAnimation != null)
+        {
+            exitAnimation.SetActive(true);
+        }
+
+        yield return new WaitForSeconds(exitDelay);
+
+        LoadNextScene();
     }
 
     IEnumerator TypeText()
@@ -96,7 +112,6 @@ public class IntroSequenceUI : MonoBehaviour
     {
         while (isTyping)
         {
-  
             yield return new WaitForSeconds(cursorBlinkSpeed);
 
             // Temporarily remove cursor
