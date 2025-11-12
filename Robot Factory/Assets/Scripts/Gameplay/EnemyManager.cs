@@ -29,7 +29,10 @@ public class EnemyManager : MonoBehaviour
         {
             SpawnEnemies();
             timer = spawnTimer;
-            spawnTimer -= spawnSpeedInterval;
+            if (spawnTimer >= 0.5f)
+            {
+                spawnTimer -= spawnSpeedInterval;
+            }
         }
       
 
