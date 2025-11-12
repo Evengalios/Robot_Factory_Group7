@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -8,14 +10,23 @@ public class EnemyManager : MonoBehaviour
     [SerializeField] GameObject greenEnemy;
     [SerializeField] GameObject yellowEnemy;
     [SerializeField] float spawnTimer;
-    public float timer;
+    [SerializeField] float timer;
     public float spawnSpeedInterval;
     public GameObject Player;
     private GameObject[] Spawners;
     public int minSpawn;
     public int maxSpawn;
     private int spawnNum = 0;
+    public Queue<GameObject> redEnemies = new Queue<GameObject>();
+    public Queue<GameObject> blueEnemies = new Queue<GameObject>();
+    public Queue<GameObject> greenEnemies = new Queue<GameObject>();
+    public Queue<GameObject> yellowEnemies = new Queue<GameObject>();
+    public static EnemyManager Instance;
 
+    public void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -29,9 +40,12 @@ public class EnemyManager : MonoBehaviour
         {
             SpawnEnemies();
             timer = spawnTimer;
-            spawnTimer -= spawnSpeedInterval;
+            if (spawnTimer >= 0.5f)
+            {
+                spawnTimer -= spawnSpeedInterval;
+            }
         }
-      
+
 
     }
 
@@ -52,27 +66,83 @@ public class EnemyManager : MonoBehaviour
                 GameObject spawnedEnemy = Instantiate(redEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+                redEnemies.Enqueue(spawnedEnemy);
             }
             else if (enemyType == 1)
             {
-               GameObject spawnedEnemy = Instantiate(blueEnemy, spawnLocation.transform.position, Quaternion.identity);
+                GameObject spawnedEnemy = Instantiate(blueEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+                blueEnemies.Enqueue(spawnedEnemy);
             }
             else if (enemyType == 2)
             {
                 GameObject spawnedEnemy = Instantiate(greenEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+                greenEnemies.Enqueue(spawnedEnemy);
             }
-            else if (enemyType == 3) {
+            else if (enemyType == 3)
+            {
                 GameObject spawnedEnemy = Instantiate(yellowEnemy, spawnLocation.transform.position, Quaternion.identity);
                 NavMeshAgent agent = spawnedEnemy.GetComponent<NavMeshAgent>();
                 agent.destination = Player.transform.position;
+                yellowEnemies.Enqueue(spawnedEnemy);
             }
 
         }
     }
 
-  
+    public void DestroyOldestRed()
+    {
+        if (redEnemies.Count > 0)
+        {
+            GameObject oldestRed = redEnemies.Dequeue();
+            if (oldestRed != null)
+            {
+                Destroy(oldestRed);
+                Debug.Log("Destroyed oldest red");
+            }
+        }
+    }
+
+    public void DestroyOldestBlue()
+    {
+        if (blueEnemies.Count > 0)
+        {
+            GameObject oldestBlue = blueEnemies.Dequeue();
+            if (oldestBlue != null)
+            {
+                Destroy(oldestBlue);
+                Debug.Log("Destroyed oldest blue");
+            }
+        }
+    }
+
+    public void DestroyOldestGreen()
+    {
+        if (greenEnemies.Count > 0)
+        {
+            GameObject oldestGreen = greenEnemies.Dequeue();
+            if (oldestGreen != null)
+            {
+                Destroy(oldestGreen);
+                Debug.Log("Destroyed oldest green");
+            }
+        }
+    }
+
+    public void DestroyOldestYellow()
+    {
+        if (yellowEnemies.Count > 0)
+        {
+            GameObject oldestYellow = yellowEnemies.Dequeue();
+            if (oldestYellow != null)
+            {
+                Destroy(oldestYellow);
+                Debug.Log("Destroyed oldest yellow");
+            }
+        }
+    }
+
 }

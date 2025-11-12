@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Gameplay\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Player.cs" />
     <Compile Include="Assets\Scripts\DanglingLight.cs" />
     <Compile Include="Assets\Scripts\Gameplay\BarcodeAttack.cs" />
     <Compile Include="Assets\Scripts\FlickeringText.cs" />
